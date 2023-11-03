@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ajax pays</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+      defer
+    ></script>
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- ------------------- -->
+    <!-- Code Postal -->
+    <!-- ------------------- -->
+
+    <!-- <h1>Requête Ajax sur API Code Postal</h1>
+  <form action="#">
+    <div class="input">
+      <label for="codePostal">Code Postal</label>
+      <input id="codePostal" type="text">
+    </div>
+    <br>
+    <div class="output">
+      <button id="boutonRechercher" type="submit">Rechercher</button>
+      <select id="liste"></select>
+    </div>
+  </form> -->
+
+    <!-- ---------------- -->
+    <!-- Les Pays -->
+    <!-- ---------------- -->
+
+    <h1>Introduction à Ajax</h1>
+    <form action="#">
+      <label for="inputPays">Pays</label>
+      <div class="recherche">
+        <input id="inputPays" type="text" autocomplete="off" />
+        <select id="liste" size="10"></select>
+      </div>
+      <button id="boutonEnvoyer" type="submit">Envoyer</button>
+    </form>
+
+    <div id="container"></div>
+  </body>
+</html>

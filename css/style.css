@@ -1,0 +1,142 @@
+/* ----------------- */
+/* Code Postal */
+/* ----------------- */
+
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../img/bg.jpg);
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+form {
+  width: 1500px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.input,
+.output {
+  display: flex;
+  background: white;
+  padding: 0.5rem;
+}
+
+label,
+button {
+  margin-right: 0.5rem;
+  display: block;
+  white-space: nowrap;
+}
+
+input,
+select {
+  border: 0;
+  outline: 0;
+  width: 100%;
+} */
+
+/* -------------- */
+/* Les Pays */
+/* -------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../img/fond.png);
+}
+
+h1 {
+  color: pink;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  width: 1000px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+label {
+  color: white;
+}
+
+.recherche {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.5rem;
+  position: relative;
+}
+
+input {
+  outline: 0;
+}
+
+select {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow-y: scroll;
+  outline: 0;
+  top: 21px;
+  z-index: 2147483647;
+}
+
+select option:hover {
+  background: pink;
+  color: white;
+}
+
+button {
+  height: 20px;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+  width: 1000px;
+  max-width: 95%;
+}
+
+#informations {
+  width: 50%;
+  padding: 1rem;
+  margin: 0;
+  color: white;
+}
+
+#informations img {
+  width: 100%;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+#carte {
+  width: 50%;
+  aspect-ratio: 1;
+}
+
+@media screen and (max-width: 700px) {
+  #container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #informations,
+  #carte {
+    width: 75%;
+  }
+}
